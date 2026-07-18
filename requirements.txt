@@ -1,0 +1,39 @@
+# Core Scientific Computing
+numpy>=2.2
+pandas>=2.3
+scipy>=1.15
+
+# Machine Learning
+scikit-learn>=1.7
+joblib>=1.5
+
+# Data Formats
+openpyxl>=3.1
+netCDF4>=1.7
+xarray>=2025.6
+
+# Visualization
+matplotlib>=3.10
+plotly>=6.0
+streamlit>=1.58
+
+# Geospatial
+Cartopy>=0.25
+geopandas>=1.1
+shapely>=2.1
+pyproj>=3.7
+global-land-mask>=1.0
+geopy>=2.4
+
+# Utilities
+requests>=2.34
+python-dotenv>=1.2
+PyYAML>=6.0
+tqdm>=4.67
+
+# Apache Airflow
+apache-airflow>=3.2
+apache-airflow-providers-ssh>=5.0
+
+# Optional (only if used)
+GitPython>=3.1
