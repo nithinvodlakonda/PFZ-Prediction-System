@@ -1,0 +1,12 @@
+streamlit>=1.45
+pandas<3,>=2.2
+pyarrow<20,>=14
+numpy
+plotly
+
+# Only needed if you use the bundled demo backend for standalone testing
+# (your real production Utils/config/run_pipeline don't need these directly
+# unless your actual pipeline also uses them):
+netCDF4
+xarray
+Pillow

@@ -1,0 +1,130 @@
+/* ============================================================
+   PFZ Classifier System — scientific-clean theme overrides
+   Loaded once via components.theme.inject_theme() on every page.
+   Philosophy: light background, generous whitespace, real
+   typographic hierarchy, navy/teal used only as accents.
+   ============================================================ */
+
+:root {
+    --pfz-navy: #0B3D6B;
+    --pfz-navy-dark: #082B4D;
+    --pfz-teal: #0E7C86;
+    --pfz-teal-light: #128C99;
+    --pfz-bg-soft: #F8FAFB;
+    --pfz-border: #E3E8EC;
+    --pfz-text: #1F2937;
+    --pfz-text-secondary: #5B6472;
+}
+
+/* Base typography */
+html, body, [class*="css"] {
+    font-family: "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--pfz-text);
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--pfz-navy);
+}
+
+h1 { font-size: 2.05rem; }
+h2 { font-size: 1.5rem; margin-top: 0.25rem; }
+h3 { font-size: 1.15rem; }
+
+/* Main content: generous whitespace */
+.block-container {
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+    max-width: 1200px;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: var(--pfz-bg-soft);
+    border-right: 1px solid var(--pfz-border);
+}
+section[data-testid="stSidebar"] .stMarkdown p {
+    color: var(--pfz-text-secondary);
+}
+
+/* Hero banner (used on Home) */
+.pfz-hero {
+    background: linear-gradient(135deg, var(--pfz-navy) 0%, var(--pfz-teal-light) 100%);
+    border-radius: 14px;
+    padding: 2.25rem 2.5rem;
+    color: #ffffff;
+    margin-bottom: 1.75rem;
+}
+.pfz-hero h1 { color: #ffffff; margin-bottom: 0.35rem; }
+.pfz-hero p { color: rgba(255,255,255,0.88); font-size: 1.02rem; margin: 0; }
+
+/* Header accent bar (used on inner pages instead of a full gradient hero) */
+.pfz-header-bar {
+    border-left: 5px solid var(--pfz-navy);
+    padding: 0.4rem 0 0.4rem 1rem;
+    margin-bottom: 1.4rem;
+}
+.pfz-header-bar h1 { margin-bottom: 0.15rem; }
+.pfz-header-bar p { color: var(--pfz-text-secondary); margin: 0; }
+
+/* Cards */
+.pfz-card {
+    background: #ffffff;
+    border: 1px solid var(--pfz-border);
+    border-radius: 12px;
+    padding: 1.1rem 1.3rem;
+}
+
+/* KPI metric cards */
+.pfz-kpi {
+    background: var(--pfz-bg-soft);
+    border: 1px solid var(--pfz-border);
+    border-radius: 12px;
+    padding: 0.95rem 1.1rem;
+    text-align: left;
+}
+.pfz-kpi .pfz-kpi-label {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--pfz-text-secondary);
+    margin-bottom: 0.2rem;
+}
+.pfz-kpi .pfz-kpi-value {
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: var(--pfz-navy);
+}
+.pfz-kpi .pfz-kpi-sub {
+    font-size: 0.78rem;
+    color: var(--pfz-text-secondary);
+}
+
+/* Category pills */
+.pfz-pill {
+    display: inline-block;
+    padding: 0.15rem 0.65rem;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* Buttons: keep navy as primary action color */
+.stButton > button[kind="primary"], .stButton > button {
+    border-radius: 8px;
+}
+
+/* Status dot for "live system status" */
+.pfz-status-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+/* Divider spacing tweak */
+hr { margin: 1.1rem 0; }

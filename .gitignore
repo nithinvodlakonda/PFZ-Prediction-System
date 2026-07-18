@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# Environment
+.env
+
+# Logs
+*.log
+
+# Generated outputs
+prediction&dashboard/Outputs/
+
+# NetCDF files
+*.nc
+
+# Cache
+.pytest_cache/
+prediction&dashboard/Models/extra_trees_pfz_model.pkl
