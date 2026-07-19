@@ -2,7 +2,7 @@
 
 An end-to-end Machine Learning pipeline for **Potential Fishing Zone (PFZ) Forecasting** using historical fish catch records and satellite-derived oceanographic data.
 
-This project combines **30 years of historical fish catch data (1993–2023)** with multiple oceanographic variables to classify fish catch potential into **High, Medium, and Low** categories. The system also includes an automated prediction pipeline using **Apache Airflow** and an interactive visualization dashboard built with **Streamlit**. :contentReference[oaicite:1]{index=1}
+This project combines **30 years of historical fish catch data (1993–2023)** with multiple oceanographic variables to classify fish catch potential into **High, Medium, and Low** categories. The system also includes an automated prediction pipeline and an interactive visualization dashboard built with **Streamlit**. :contentReference[oaicite:1]{index=1}
 
 ---
 
@@ -13,7 +13,6 @@ This project combines **30 years of historical fish catch data (1993–2023)** w
 - Oceanographic Feature Extraction
 - Advanced Feature Engineering
 - Machine Learning Classification
-- Apache Airflow Automation
 - Interactive Streamlit Dashboard
 - PFZ Map Generation
 
@@ -43,7 +42,7 @@ Historical Fish Catch Data
       Model Serialization
                 │
                 ▼
- Apache Airflow Prediction Pipeline
+      Prediction Pipeline
                 │
                 ▼
       PFZ Map Generation
@@ -154,7 +153,7 @@ The Extra Trees Classifier was selected as the final prediction model because it
 
 # Automation
 
-The complete prediction workflow is automated using **Apache Airflow**.
+The complete prediction workflow is automated .
 
 Pipeline Stages:
 
@@ -195,7 +194,6 @@ Features include:
 - Cartopy
 - Matplotlib
 - Streamlit
-- Apache Airflow
 - Joblib
 
 ---
